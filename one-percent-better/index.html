@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>1% Better</title>
+    <meta
+      name="description"
+      content="A free daily habit tracker for iPhone and Android. Tick off your habits, build streaks, and watch them compound."
+    />
+    <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="stylesheet" href="site.css" />
+    <style>
+      .doc {
+        max-width: 640px;
+        margin: 0 auto;
+        padding-left: max(16px, env(safe-area-inset-left, 0px));
+        padding-right: max(16px, env(safe-area-inset-right, 0px));
+        padding-block: calc(40px + env(safe-area-inset-top, 0px)) calc(40px + env(safe-area-inset-bottom, 0px));
+        display: grid;
+        gap: 18px;
+      }
+      .appicon {
+        width: 88px;
+        height: 88px;
+        border-radius: 20px;
+      }
+      .doc h1 {
+        font-size: clamp(54px, 15vw, 84px);
+        margin: 0;
+      }
+      .lede {
+        font-size: 19px;
+        color: var(--muted);
+        margin: 0;
+        max-width: 40ch;
+      }
+      .points {
+        list-style: none;
+        margin: 6px 0 0;
+        padding: 0;
+        display: grid;
+        gap: 10px;
+      }
+      .points li {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: var(--r);
+        padding: 12px 14px;
+        color: var(--muted);
+      }
+      .points b {
+        color: var(--ink);
+      }
+      .soon {
+        font-family: var(--f-mono);
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--accent);
+        font-weight: 600;
+        margin: 8px 0 0;
+      }
+      .links {
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+      .links a {
+        color: var(--accent);
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="doc">
+      <img class="appicon" src="icons/icon-192.png" alt="1% Better app icon" width="88" height="88" />
+      <h1>1% Better</h1>
+      <p class="lede">A free daily habit tracker. Get 1% better every day and watch it compound.</p>
+      <ul class="points">
+        <li><b>Tick off</b> a short list of daily habits for health, knowledge, focus, money and growth.</li>
+        <li><b>Build streaks</b> and follow the never-miss-twice rule.</li>
+        <li><b>Get reminders</b> at the times that fit your day.</li>
+        <li><b>Private by design.</b> No account, no ads, no tracking. Your data stays on your phone.</li>
+      </ul>
+      <p class="soon">Coming soon to the App Store and Google Play</p>
+      <p class="links"><a href="support.html">Support</a><a href="privacy.html">Privacy policy</a></p>
+    </main>
+  </body>
+</html>
